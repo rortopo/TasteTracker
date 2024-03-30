@@ -15,8 +15,8 @@ hugbot = hugg.hugCommands("rorycavanmc@gmail.com", "wnVmBwCsUuThM2")
 app = Flask(__name__)
 app.config['SECRET_KEY'] = os.urandom(64)
 
-client_id = '0d17cf42d40a48bea802aef127087548'
-client_secret = '7afa8777c069421492d72d1d57de49a1'
+client_id = ''
+client_secret = ''
 redirect_uri = 'http://localhost:8080/callback'
 scope = 'playlist-read-private user-library-read user-top-read'
 
