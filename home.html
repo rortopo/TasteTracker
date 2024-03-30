@@ -1,0 +1,166 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Foundation | Welcome</title>
+    <link rel="stylesheet" href="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.min.css">
+  </head>
+  <style>
+    .card-container {
+        perspective: 1000px;
+        width: 192px;
+        height: 192px;
+        position: relative;
+    }
+
+    .card {
+        width: 100%;
+        height: 100%;
+        transition: transform 2.6s;
+        transform-style: preserve-3d;
+        cursor: pointer;
+    }
+
+    .card:hover {
+        transform: rotateY(180deg); 
+    }
+
+    .card-front, .card-back {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        backface-visibility: hidden;
+    }
+    .card-front {
+        background-color: #3498db; 
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 24px;
+    }
+
+    .card-back {
+        background-color: #2ecc71; 
+        color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 18px;
+        transform: rotateY(180deg); 
+    }
+  </style>
+  <Script>
+    function blurb(){
+      
+    }
+  </Script>
+  <body>
+
+    <!-- Start Top Bar -->
+    <div class="top-bar">
+      <div class="top-bar-left">
+        <ul class="menu">
+          <li class="menu-text">Spotify Music Analyzer</li>
+        </ul>
+      </div>
+    </div>
+    <!-- End Top Bar -->
+
+    <div class="callout large primary">
+      <div class="row column text-center">
+        <h1>get your songs rated by our judges!! </h1>
+      </div>
+    </div>
+
+    <div class="row" id="content">
+      <div class="medium-8 columns">
+        <div class="blog-post">
+          <h3>Ringo Starr</h3>
+          <div class="card-container">
+            <div class="card" id="flip-card">
+                <div class="card-front">
+                  <img src="/static/ringo.png" style="width:192px;height:192px;"> 
+                </div>
+                <div class="card-back">
+                    {{ringo_num}}
+                </div>
+            </div>
+          </div>
+          <p>{{ ringo }} </p>
+        </div>
+
+        <div class="blog-post">
+          <h3>College Radio Worker</h3>
+          <div class="card-container">
+            <div class="card" id="flip-card">
+                <div class="card-front">
+                  <img src="/static/nicePerson.png" style="width:192px;height:192px;"> 
+                </div>
+                <div class="card-back">
+                    {{radio_num}}
+                </div>
+            </div>
+          </div>
+          <p>{{ radio }}</p>
+        </div>
+
+        <div class="blog-post">
+          <h3>Batman</h3>
+          <div class="card-container">
+            <div class="card" id="flip-card">
+                <div class="card-front">
+                  <img src="/static/batman.png" style="width:192px;height:192px;"> 
+                </div>
+                <div class="card-back">
+                    {{batman_num}}
+                </div>
+            </div>
+          </div>
+          <p>{{ batman }}</p>
+        </div>
+
+        <div class="blog-post">
+          <h3>Record Store Owner</h3>
+          <div class="card-container">
+            <div class="card" id="flip-card">
+                <div class="card-front">
+                  <img src="/static/recordstoreguy.png" style="width:192px;height:192px;"> 
+                </div>
+                <div class="card-back">
+                    {{preten_num}}
+                </div>
+            </div>
+          </div>
+          <p> {{ preten }}</p>
+        </div>
+      </div>
+      <div class="medium-3 columns" data-sticky-container>
+        <div class="sticky" data-sticky data-anchor="content">
+         
+
+        </div>
+      </div>
+    </div>
+
+
+    <div class="blog-post">
+      <h3>Total Score: </h3>
+      <h3> {{ total_score }} </h3>
+      <div class="card-container">
+
+     
+
+    </div>
+  </div>
+</div>
+
+
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.js"></script>
+    <script>
+      $(document).foundation();
+    </script>
+  </body>
+</html>
