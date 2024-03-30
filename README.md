@@ -18,5 +18,5 @@ We really love the responses that our judges give. We find them to be quite humo
 ## What we learned
 Our big takeaway is basic web development skills, from the basic skeleton of a program, to HTML/CSS work. Much of the work was split up between team members, but all of us learned a little about what the others were working on as we went. Many of us were familiar with API usage, so the frontend is where most of our problem solving occurred.
 
-## What's next for Judge of Taste
+## What's next for TasteTracker
 We would like to have our app hosted, so it does not have to be run locally and can be used by anyone, anywhere.
