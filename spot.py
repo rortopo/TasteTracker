@@ -7,7 +7,7 @@ from spotipy.oauth2 import SpotifyOAuth
 from spotipy.cache_handler import FlaskSessionCacheHandler
 import hugg
 
-hugbot = hugg.hugCommands("rorycavanmc@gmail.com", "wnVmBwCsUuThM2")
+hugbot = hugg.hugCommands("", "")
 
 
 
